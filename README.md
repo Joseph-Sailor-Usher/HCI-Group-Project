@@ -2,9 +2,9 @@
 This project aims to create a computer application that addresses the accessibility needs of individuals with a specific disability. The application can be of any type, such as software, a game, a Chrome add-on, a website, or any other form that provides accessibility features for the chosen disability.
 
 ## Team Members
-- Joseph Sailor Usher
-- Jordan Taranto
 - Kevin Membreno
+- Jordan Taranto
+- Joseph Usher
 
 ## Introduction to the Disability
 In this section, we introduce and explain the chosen disability. We provide insights into the daily experiences of individuals living with this disability, highlighting the challenges they face when using computers.
