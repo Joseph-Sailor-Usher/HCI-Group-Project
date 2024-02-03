@@ -1,11 +1,7 @@
-chrome.action.onClicked.addListener(function (tab) {
-    //fired when the user clicks on the ext's icon
-    console.log("Extension icon clicked");    
-    sendMessage();
-});
-function sendMessage() {
-  console.log("Sending message");
-  chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
-    chrome.tabs.sendMessage(tabs[0].id, {action: "pageToSpeech"}, function(response) {});
+console.log("Background script loaded.");
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    if (request.action === "speakText" && request.text) {
+      chrome.tts.speak(request.text, { rate: 1.0 });
+    }
   });
-}
+  
